@@ -1,0 +1,19 @@
+{
+  "name": "quick0",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.4",
+    "meteor-node-stubs": "~0.2.3",
+    "react": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-modal": "^1.6.5",
+    "simpl-schema": "^0.1.0",
+    "winston": "^2.3.0"
+  }
+}
