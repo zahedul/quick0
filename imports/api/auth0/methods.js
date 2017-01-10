@@ -21,7 +21,7 @@ Meteor.methods({
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + authToken
       };
-      let httpUrl = AUTH0.BASE_URL + 'api/v2/users?per_page=100';
+      let httpUrl = AUTH0.BASE_URL + '/api/v2/users?per_page=100';
       httpUrl += '&connection='+ Meteor.settings.AUTH0.CONNECTION;
 
       const result = HTTP.call('GET', httpUrl, { headers: httpHeader });
@@ -58,7 +58,7 @@ Meteor.methods({
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + authToken
       };
-      const httpUrl = AUTH0.BASE_URL + 'api/v2/users/' + options.user_id;
+      const httpUrl = AUTH0.BASE_URL + '/api/v2/users/' + options.user_id;
       const result = HTTP.call('DELETE', httpUrl, { headers: httpHeader });
 
       if (result.statusCode === 204) {
