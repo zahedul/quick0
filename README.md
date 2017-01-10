@@ -5,7 +5,7 @@ In Auth0 its difficult to remove a user(s).
 
 ### Technology
 
-1. Meteor (1.4)
+1. MeteorJS (1.4)
 2. ReactJS
 3. MongoDB
 
@@ -29,8 +29,16 @@ Before run create _settings.json_ file in root project with to put Auth0 credent
   "public": {
     "AUTH0": {
       "BASE_URL": " -- client auth0 domain -- ",
-    "CLIENT_ID": " --client id-- ",
+      "CLIENT_ID": " --client id-- ",
     }
   }
 }
 ```
+
+#### TODO
+- [ ] Alert before remove
+- [ ] professional UI
+- [ ] Sync All users
+- [ ] manage multiple Auth0 clients
+
+
