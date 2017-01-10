@@ -24,10 +24,10 @@ class App extends Component {
     console.log(this.props);
     return (
       <div id="wrapper">
-        <div id="sidebar-wrapper" className="">
+        <div id="sidebar-wrapper" className="clearfix">
           <nav id="spy">
             <ul className="sidebar-nav nav">
-              <li className="sidebar-brand">
+              <li className="sidebar-brand title">
                 <span className="fa fa-home solo">Quick0</span>
               </li>
               <li className="">

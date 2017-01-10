@@ -1,14 +1,35 @@
 @import "{}/imports/ui/stylesheets/not-found.less";
+
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic";
+/* -- import Roboto Font ---------------------------- */
+/* -- import Material Icons Font -------------------- */
+@font-face {
+  font-family: 'Material Design Iconic Font';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/Material-Design-Iconic-Font.eot?v=1.0');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/Material-Design-Iconic-Font.eot?#iefix&v=1.0') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/Material-Design-Iconic-Font.woff?v=1.0') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/Material-Design-Iconic-Font.ttf?v=1.0') format('truetype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/Material-Design-Iconic-Font.svg?v=1.0#Material-Design-Iconic-Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 #wrapper {
-  padding-left: 250px;
+  font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+  padding-left: 200px;
   transition: all 0.4s ease 0s;
 }
 
 #sidebar-wrapper {
-  margin-left: -250px;
-  left: 250px;
-  width: 250px;
-  background: #000;
+  margin-left: -200px;
+  left: 200px;
+  width: 200px;
+  background: #F17153;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#F17153, #F58D63, #f1ab53);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F17153, #F58D63, #f1ab53);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#F17153, #F58D63, #f1ab53);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F17153, #F58D63, #f1ab53);;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -28,10 +49,19 @@
   width: 100%;
 }
 
+.title {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-weight:bold;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -43,7 +73,7 @@
 }
 
 .sidebar-nav li a {
-  color: #999999;
+  color: #ffffff;
   display: block;
   text-decoration: none;
   padding-left: 60px;
