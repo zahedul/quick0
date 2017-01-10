@@ -9,7 +9,7 @@ Meteor.methods({
       logger().info('call syncUsers');
       const AUTH0 = Meteor.settings.AUTH0;
       const authToken = jwt.sign({
-        aud: AUTH0.API_KEY,
+        aud: AUTH0.GLOBAL_CLIENT_ID,
         scopes: {
           users: {
             actions: ["read"]
@@ -46,7 +46,7 @@ Meteor.methods({
       logger().info('call removeUser');
       const AUTH0 = Meteor.settings.AUTH0;
       const authToken = jwt.sign({
-        aud: AUTH0.API_KEY,
+        aud: AUTH0.GLOBAL_CLIENT_ID,
         scopes: {
           users: {
             actions: ["delete"]
