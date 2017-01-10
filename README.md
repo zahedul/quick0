@@ -15,7 +15,8 @@ meteor npm install
 meteor --settings settings.json
 ```
 
-Before run create _settings.json_ file in root project with to put Auth0 credential.
+Before run create _settings.json_ file in root project.
+ #### settings.json (auth0 credential)
 ```
 {
   "AUTH0": {
