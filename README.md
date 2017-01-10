@@ -16,6 +16,7 @@ meteor --settings settings.json
 ```
 
 Before run create _settings.json_ file in root project.
+
  #### settings.json (auth0 credential)
 ```
 {
