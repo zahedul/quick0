@@ -1,2 +1,2 @@
 #!/bin/bash
-MONGO_URL=mongodb://localhost:27017/quick0 meteor --port 1000 --settings settings.json
+MONGO_URL=mongodb://localhost:27017/quick0 meteor --port 3000 --settings settings.json
